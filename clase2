@@ -1,0 +1,23 @@
+package org.example;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+public class ListMainj {
+    public static void main(String[] args) {
+        Scanner leer=new Scanner(System.in);
+        int nombre[]={0,1,2,3,4,5,6,7,8,9,10};
+        System.out.println("agrege a las personas que desee que esten la lista");
+        List<Persona>per=new ArrayList<>();
+        per.add(new Persona("Pablito","P",'M'));
+        per.add(new Persona("Paulito","P",'M'));
+        per.add(new Persona("Pedro","P",'M'));
+        ArrayList<Persona>p=new ArrayList<>();
+        p.add(new Persona("Pablito","P",'F'));
+        System.out.println(p.get(0).getNombre());
+
+        Persona[] pp=new Persona[10];
+        pp[0]=new Persona("Pablito","P",'F');
+        System.out.println(pp[0].getNombre());
+    }
+
+}
